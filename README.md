@@ -15,35 +15,35 @@ This repository is a collection of distinct mechatronic projects, each demonstra
 ### 1. Sensor Integration (Input)
 
 * **Analog Sensors:**
-    * **LM35 Temperature Sensor:** Measures ambient temperature by reading a linear analog voltage.
-    * **Light Dependent Resistor (LDR):** Measures light intensity using a voltage divider circuit.
-    * **Potentiometer:** Provides a variable analog input for user control (e.g., setting motor speed).
+    * **LM35 Temperature Sensor:** Measures ambient temperature by reading a linear analog voltage.
+    * **Light Dependent Resistor (LDR):** Measures light intensity using a voltage divider circuit.
+    * **Potentiometer:** Provides a variable analog input for user control (e.g., setting motor speed).
 
 * **Digital & Event Sensors:**
-    * **Push Button:** Detects user input for event-driven logic (e.g., counting, changing motor direction).
-    * **CNY70 IR Proximity Sensor:** Detects the presence of a reflective object.
-    * **HC-SR04 Ultrasonic Sensor:** Measures distance by timing an ultrasonic pulse (`trigger`/`echo`).
-    * **PIR Motion Sensors:** Detects motion in the environment (used in `Experiment 7.ino`).
+    * **Push Button:** Detects user input for event-driven logic (e.g., counting, changing motor direction).
+    * **CNY70 IR Proximity Sensor:** Detects the presence of a reflective object.
+    * **HC-SR04 Ultrasonic Sensor:** Measures distance by timing an ultrasonic pulse (`trigger`/`echo`).
+    * **PIR Motion Sensors:** Detects motion in the environment (used in `Experiment 7.ino`).
 
 * **Advanced Sensors (I2C / SPI):**
-    * **ADXL345 Accelerometer:** Measures 3-axis acceleration and detects "jolts" via I2C (`Wire.h`).
-    * **RC522 RFID Reader:** Reads unique identifiers from RFID cards via SPI (`RFID.h`).
+    * **ADXL345 Accelerometer:** Measures 3-axis acceleration and detects "jolts" via I2C (`Wire.h`).
+    * **RC522 RFID Reader:** Reads unique identifiers from RFID cards via SPI (`RFID.h`).
 
 ### 2. Actuator Control (Output)
 
 * **DC Motor Control (L293D):**
-    * Implements bidirectional (Clockwise/Counter-Clockwise) control of a DC motor using an L293D H-Bridge driver.
-    * Uses Pulse Width Modulation (PWM) (`analogWrite`) to achieve variable speed control based on potentiometer input.
+    * Implements bidirectional (Clockwise/Counter-Clockwise) control of a DC motor using an L293D H-Bridge driver.
+    * Uses Pulse Width Modulation (PWM) (`analogWrite`) to achieve variable speed control based on potentiometer input.
 
 * **Stepper Motor Control (ULN2003):**
-    * Drives a 28BYJ-48 unipolar stepper motor for precise angular control.
-    * Uses a ULN2003 Darlington Array to provide sufficient current to the motor coils.
+    * Drives a 28BYJ-48 unipolar stepper motor for precise angular control.
+    * Uses a ULN2003 Darlington Array to provide sufficient current to the motor coils.
   
-    * Leverages the `AccelStepper` library for smooth acceleration and position-based commands.
+    * Leverages the `AccelStepper` library for smooth acceleration and position-based commands.
 
 * **LED & Audio Output:**
-    * Drives single and multiple LEDs for status indication and user feedback (e.g., a "reaction game" in `Experiment 6.ino`).
-    * Generates audible frequencies for alerts using the `toneAC` library.
+    * Drives single and multiple LEDs for status indication and user feedback (e.g., a "reaction game" in `Experiment 6.ino`).
+    * Generates audible frequencies for alerts using the `toneAC` library.
 
 > **[Image: Schematic of DC Motor control with L293D driver]**
 >
@@ -52,11 +52,11 @@ This repository is a collection of distinct mechatronic projects, each demonstra
 ### 3. Data Display (Feedback)
 
 * **7-Segment Display:**
-    * Manages a common-cathode 7-segment display to show numeric output.
-    * `Experiment 1` implements a 0-9 counter based on push-button presses.
+    * Manages a common-cathode 7-segment display to show numeric output.
+    * `Experiment 1` implements a 0-9 counter based on push-button presses.
 
 * **16x2 LCD Display:**
-    * Uses the `LiquidCrystal` library to display real-time sensor data (temperature, light level) and system status (motor direction, speed).
+    * Uses the `LiquidCrystal` library to display real-time sensor data (temperature, light level) and system status (motor direction, speed).
 
 > **[Image: Schematic of Stepper Motor control with ULN2003 driver]**
 >
