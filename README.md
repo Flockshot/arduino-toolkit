@@ -45,9 +45,9 @@ This repository is a collection of distinct mechatronic projects, each demonstra
     * Drives single and multiple LEDs for status indication and user feedback (e.g., a "reaction game" in `Experiment 6.ino`).
     * Generates audible frequencies for alerts using the `toneAC` library.
 
-> **[Image: Schematic of DC Motor control with L293D driver]**
->
-> *(**Developer Note:** Place your schematic from `Experiment 3.pdf` here.)*
+![Image: Schematic of DC Motor control with L293D driver](.media/L293D.png)
+![Image: Schematic of Stepper Motor control with ULN2003 driver](.media/ULN2003.png)
+
 
 ### 3. Data Display (Feedback)
 
@@ -58,9 +58,7 @@ This repository is a collection of distinct mechatronic projects, each demonstra
 * **16x2 LCD Display:**
     * Uses the `LiquidCrystal` library to display real-time sensor data (temperature, light level) and system status (motor direction, speed).
 
-> **[Image: Schematic of Stepper Motor control with ULN2003 driver]**
->
-> *(**Developer Note:** Place your schematic from `Experiment 4.pdf` here.)*
+![Image: Schematic of 16x2 LCD Display connected with Arduino](.media/LCD.png)
 
 ### 4. Integrated Systems
 
